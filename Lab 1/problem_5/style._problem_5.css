@@ -1,0 +1,104 @@
+
+	header, main, .footer{
+		margin-right: 150px;
+		margin-left: 150px;
+	}
+
+	/* HEAD */
+	.contract_login{
+		display: flex;
+		justify-content: space-around;
+		background-color: grey;
+	}
+	.head{
+		display: flex;
+		justify-content: space-around;
+	}
+	.inside_head{
+		display: inline-flex		;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-around;
+		background-color: darkviolet;
+	}
+	.menu a{
+		text-decoration-line: none;
+		text-transform: uppercase;
+		font-weight: bolder;
+		color: white;
+	}
+	/*section 1*/
+	.section_1{
+		display: flex;
+	}
+	.advertise{
+		display: block;
+	}
+	/*section 2*/
+	#name_list{
+		border-top: 2px dotted grey;
+		border-bottom: 2px dotted grey;
+		border-right: none;
+		border-left: 8px solid darkviolet;
+		text-transform: uppercase;
+		background-color: lightgrey;
+	}
+	.list_product_1{
+		display: flex;
+		justify-content: space-around;
+	}
+	/*bannner*/
+	.banner{
+		background-color: grey;
+		padding: 30px 30px;
+	}
+	/*section 3*/
+	.contracter{
+		display: flex;
+	}
+	.contracter .status{
+		display: flex;
+		justify-content: space-between;
+	}
+	/*section 4*/
+	.sale_product{
+		display: flex;
+	}
+	.sale_product #sale_percentage{
+		background-color: red;
+		color: white;
+		position: absolute;
+		right: 20%;
+		padding: 10px 10px;
+	}
+
+	/*section 9*/
+	.infor_news{
+		display: flex;
+	}
+
+	/* section 13 */
+	.section_13{
+		border-top: 6px solid darkviolet;
+		border-bottom: 6px solid darkviolet;
+		display: flex;
+		justify-content: space-between;
+	}
+	.function{
+		display: flex;
+	}
+
+	/* footer */
+	.footer{
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer h3{
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+	.footer a{
+		text-decoration-line: none;
+		color: black;
+	}
