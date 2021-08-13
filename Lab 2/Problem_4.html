@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration form</title>
+</head>
+<body>
+	<form action="###" method="GET">
+		<table border="2">
+			<tfoot>
+				<tr align="center">
+					<td colspan="10">
+						<button type="submit">Submit</button>
+						<button type="reset">Clear This Form</button>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td colspan="4"><label for="_lastname"><b>Last Name</b></label></td>
+					<td><input type="text" name="lastname" id="_lastname" required></td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_firstname"><b>First Name</b></label></td>
+					<td><input type="text" name="firstname" id="_firstname" required></td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_address"><b>Address</b></label></td>
+					<td>
+						<textarea rows="5" cols="20" id="_address" required></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"> <label for="_city"><b>City</b></label></td>
+					<td>
+						<table>
+							<tr>
+								<td><input type="text" name="city" id="_city" required></td>
+								<td><label for="_state"><b>State</b></label></td>
+								<td><input type="text" name="state" id="_state" required></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_postalcode"><b>Zip/Postal Code</b></label></td>
+					<td><input type="text" name="code" id="_postalcode" required></td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Country</b></td>
+					<td>
+						<select name="city">
+							<option value="city1" selected>Bulgaria</option>
+							<option value="city2">Vietnam</option>
+							<option value="city2">Others</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_phone"><b>Phone(country code, area code, number)</b></label></td>
+					<td>
+						<table>
+							<tr>
+								<td>(+</td>
+								<td><input type="text" name="phone" id="_phone" required></td>
+								<td>)</td>
+								<td><input type="text" name="phone" id="_phone" required></td>
+								<td>-</td>
+								<td><input type="text" name="phone" id="_phone" required></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_email"><b>	E-mail</b></label></td>
+					<td><input type="email" name="email" id="_email" required></td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Birth date</b></td>
+					<td>
+						<table>
+							<tr>
+								<td><label for="_month">Month</label></td>
+								<td><input type="text" name="month" id="_month" required=""></td>
+								<td><label for="_day">Day</label></td>
+								<td><input type="text" name="day" id="_day" required=""></td>
+								<td><label for="_year">Year(4 digit)</label></td>
+								<td><input type="text" name="year" id="_year" required=""></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Gender</b></td>
+					<td>
+						<select name="gender">
+							<option value="Male" selected>Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Starting date</b></td>
+					<td>
+						<input type="radio" name="time">String 2006
+						<input type="radio" name="time">Summer 2008
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="_cmt"><b>Comments/Questions</b></label></td>
+					<td>
+						<textarea rows="5" cols="20" placeholder="Please send me more information about the lodging." id="_cmt" required></textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
