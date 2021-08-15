@@ -1,0 +1,58 @@
+
+		main{
+			width: 80%;
+			padding-top:50px ;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		span{
+			color: red;
+		}
+		.account{
+			width: 100%;
+			top: 50px;
+		}
+		.account h1{
+			padding-left: 9px;
+			border-left: 5px solid darkviolet;
+			border-top: 3px dashed grey;
+			border-bottom: 3px dashed grey;
+			text-transform: uppercase;
+			color: white;
+			background: #ccc;
+		}
+		.features{
+			margin-left: auto;
+			margin-right:auto;
+			display: flex;
+			justify-content: center;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		.send button, .features button{
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius:0;
+			color: darkviolet;
+			border-color: darkviolet;
+			column-gap: 10px;
+			margin-left: 20px;
+		}
+		.send button:hover, .features button:hover{
+			background-color: darkviolet ;
+			color: white;
+			border-color: darkviolet;
+		}
+		.note{
+			padding-top: 35px;
+			line-height: 0.5;
+
+		}
+		.send{
+			display: flex;
+			justify-content: center;
+		}
+		.send button{
+			padding-top: 10px;
+			margin: 20px;
+		}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	width: 90%;
+	margin-right: auto;
+	margin-left:auto ;
+}
+h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-radius: 7px;
+}
+table thead,table tfoot{
+	background-color: lightgrey;
+	font-size: 14px;
+	font-weight: 300;
+}
+.footer{
+	position: relative;
+	display: flex;
+	height: 25px;
+}
+.paging{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.paging li{
+	padding: 2px;
+}
+.paging a{
+	text-decoration: none;
+	font-size: 14px;
+}
+.paging button{
+	padding: 1px;
+}
+.numPage{
+	margin-top: 3px;
+	display: flex;
+	margin-left: 20px;
+}
+.numPage input{
+	width: 40px;
+	height: 15px;
+}
+.footer p{
+	margin-top: 3px;
+	position: absolute;
+	right: 5px;
+}
