@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 2</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style type="text/css">
+        .head-content{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .head-bar{
+            width: 100%;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+        }
+        .head-bar p{
+            margin: 0;
+        }
+        /*symbol & title*/
+        .container, .menu{
+            max-width: 1080px;
+        }
+        .col-sm-3, .col-sm-9{
+            display: inline-block;
+            overflow: initial;
+        }
+        .container img{
+            max-width: 250px;
+            max-height: 75px;
+        }
+        .container .row{
+            padding: 22px;
+        }
+        .container h1{
+            margin: 0;
+        }
+        /*navigation css*/
+        nav{
+            display: flex;
+            justify-content: center;
+            background-color: #0F3F69;
+            border-bottom: 4px solid #F4A024;
+        }
+        .menu-content{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            max-width: 1080px;
+        }
+        .menu-content:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .menu-content li {
+            display: inline-block;
+        }
+        .menu-content a {
+            margin-left: -5px;
+            display: inline-block;
+            font-weight: bold;
+            color: white;
+            line-height: 50px;
+            padding-left: 15px;
+            padding-right: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .menu-content .active a,
+        .menu-content li:hover a {
+            background-color: #F4A024;
+            color: white;
+            text-decoration: none;
+        }
+        table{
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1080px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-cotent">
+            <div class="head-bar">
+                <p>abc</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href=""><img src="images/eiu-logo.png" alt="EIU logo" loading="lazy"></a>
+                    </div>
+                    <div class="col-sm-9">
+                        <h1>Khoa Công nghệ Thông tin</h1>
+                        <p>Trường Đại học Quốc tế miền Đông</p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul type="none" class="menu-content">
+                        <li class="active"><a href="">Trang chủ</a></li>
+                        <li><a href="">Khoa CNTT</a></li>
+                        <li><a href="">Chương trình đào tạo</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Sự kiện</a></li>
+                        <li><a href="">Nghiên cứu khoa học</a></li>
+                        <li><a href="">Giáo vụ</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <table border="3" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ivan</td>
+                    <td>Ivanov</td>
+                    <td>4.54</td>
+                </tr>
+                <tr>
+                    <td>Petar</td>
+                    <td>Petrov</td>
+                    <td>4.31</td>
+                </tr>
+                <tr>
+                    <td>Kiro</td>
+                    <td>Kirov</td>
+                    <td>4.62</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

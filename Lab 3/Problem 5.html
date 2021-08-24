@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> International Employees</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        table th{
+            color: white;
+            background-color: #50B506;
+        }
+        table tr:nth-child(odd){
+            background-color: white;
+        }
+        table tr:nth-child(even){
+            background-color: #ECECD8;
+        }
+        img{
+            max-width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>Contract name</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Is Promoted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria Anders</td>
+                    <td>Berlin</td>
+                    <td>
+                        <img src="images/german-icon.png" alt="logo" loading="lazy"><span> Germany</span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana Trujilo</td>
+                    <td>México D.F.</td>
+                    <td>
+                        <img src="images/mexico-icon.png" alt="logo" loading="lazy"><span> Mexico</span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Antonio Moreno</td>
+                    <td>México D.F.</td>
+                    <td>
+                        <img src="images/mexico-icon.png" alt="logo" loading="lazy"><span> Mexico</span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkbox" checked="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thomas Hardy</td>
+                    <td>London</td>
+                    <td>
+                        <img src="images/england-icon.jpg" alt="logo" loading="lazy"><span> UK</span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkbox">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
