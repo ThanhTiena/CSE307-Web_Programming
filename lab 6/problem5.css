@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+main{
+	font-family: 'Roboto', sans-serif;
+}
+.category{
+	display: flex;
+	position: relative;
+}
+.category h3{
+	border-bottom: 5px solid #FC8D00;
+	color: grey;
+	font-weight: bold;
+	font-size: 36px;
+	display: inline-block;
+}
+hr{
+	margin-top: 1px;
+}
+.list_product{
+	display: inline-block;
+	align-items: center;
+	text-align: center;
+}
+.wraper{
+	position: relative;
+	border: 2px solid lightgrey;
+	cursor: pointer;
+}
+.list_product a img{
+	padding: 0 5px 0 5px;
+	width: 100%;
+}
+.booking-button{
+	position: absolute;
+	display: none;
+	border: 2px solid lightgrey;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+
+}
+.booking-button a{
+	display: block;
+	background-color: #FC8D00;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 7px 20px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #ffffff;
+}
+.booking-button a:first-child{
+	margin-top: calc(50% - 50px);
+}
+.booking-button a:last-child{
+	margin-bottom: calc(50% - 50px);
+}
+.list_product:hover .booking-button{
+	display: block;
+}
+.list_product:hover img{
+	filter: blur(10px);
+}
+.infor-sale{
+	color: grey;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+.infor-sale.phone{
+	color: darkorange;
+	font-weight: bold;
+}
+span{
+	color: lightgrey;
+	font-size: 12px;
+}
+#change, .searchName, .removeID, #sortingName{
+	position: absolute;
+	top: 10px;
+}
+#change{
+	left: calc(208.79px + 20px);
+}
+#sortingName{
+	left:  calc(300px + 20px);
+}
+.removeID{
+	right: calc(250px + 30px);
+}
+.searchName{
+	right: 0;
+}

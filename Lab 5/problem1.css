@@ -1,0 +1,133 @@
+.bar-address-login{
+	background-color: #2D3E50;
+	width: 100%;
+	color: white;
+	font-size: 14px;
+}
+.bar-address-login span{
+	font-weight: bold;
+}
+.bar-address-login .address{
+	padding: 0;
+}
+.bar-address-login .address p {
+	margin: 5px;
+}
+.bar-address-login .logininfor{
+	text-align: right;
+	margin: 0;
+}
+.logininfor p {
+	margin: 5px 0 5px 0;
+}
+.logininfor p a{
+	color: white;
+	text-decoration: none;
+}
+/*----------mid - header------*/
+.image-logo-shop{
+	max-width: 100%;
+}
+.search-bar input{
+	margin-left: 80px;
+}
+.search-bar, .advertise-sales{
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+.advertise-sales .mt-0{
+	margin: 0;
+}
+.search-bar input{
+	background-image: url("images/searchicon.png");
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+}
+.icon-sell{
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 50%;
+}
+#price-sale{
+	color: red;
+	font-weight: bold;
+}
+/* nav - menu ------------------- */
+.nav-menu{
+	background-color: #652D92;
+	position: relative;
+	z-index: 99;
+}
+ .nav-menu .nav .nav-item .active, .nav .nav-item:hover .nav-link{
+	background-color: #7939A9;
+}
+.nav-menu .nav-item a{
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.submenu{
+	position: absolute;
+	display: none;
+	list-style: none;
+	padding: 10px;
+	background-color: #FBFBFB;
+	box-shadow: 2px 1px 10px;
+}
+.nav .nav-item:hover .submenu {
+	display: block;
+}
+.nav .nav-item .submenu li:hover a{
+	color: white;
+	background-color: #652D92;
+}
+.nav .nav-item .submenu li a{
+	color: #652D92;
+	display: block;
+	padding: 5px 85px 5px 15px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.mobile-menu{
+	display: none;
+	z-index: 99;
+}
+@media only screen and (max-width: 767.98px) {
+	.bar-address-login .logininfor{
+		text-align: left;
+		padding-left: 5px;
+	}
+	.search-bar, .advertise-sales{
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-top: 20px;
+	}
+	.search-bar input{
+		margin-left: 0;
+	}
+	.nav-menu .container{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+		padding: 10px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.mobile-menu-icon{
+		display: inline-block;
+		border: 1px solid #fff;
+		vertical-align: middle;
+		cursor: pointer;
+		padding: 2px;
+	}
+}

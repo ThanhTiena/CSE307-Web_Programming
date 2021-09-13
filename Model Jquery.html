@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Exercise</title>
+    <script type="text/javascript">
+    	$( document ).ready(function() {
+			$('button').click(function() {
+				$("table tbody").append(`<tr>
+									  <th scope="row">1</th>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								</tr>`);
+			});
+		});
+    </script>
+  </head>
+  <body>
+    <h1>StudentList</h1>
+    <table class="table table-striped">
+		<thead>
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">First</th>
+			  <th scope="col">Last</th>
+			  <th scope="col">Handle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Mark</td>
+			  <td>Otto</td>
+			  <td>@mdo</td>
+			</tr>
+		</tbody>
+	</table>
+	<button type="button" class="btn btn-outline-primary">View More</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>

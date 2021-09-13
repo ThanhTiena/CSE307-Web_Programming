@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>problem 4</title>
+</head>
+<body>
+	<main>
+		<div id="container">
+			<img src="https://i.pinimg.com/564x/4b/70/49/4b70499d19fb8bf4846a9ed924af96cc.jpg">
+			<img src="https://i.pinimg.com/564x/72/de/0e/72de0e0b82650cd8a855f681c7566391.jpg">
+		</div>
+	</main>
+	<script type="text/javascript">
+		function creatObject(name, image){
+			var cal = Math.floor(Math.random() * 101);
+			return{
+				itsName: name,
+				itsPrice: `${cal}`,
+				itsImage: image,
+				_toString:function(){
+					return `${this.itsName} ${this.itsPrice} ${this.itsImage}`;
+				}
+			}
+		}
+		var _listOfProduct = new Array();
+		for( var i = 0 ; i < 5; i++){
+			let _product = creatObject(`orange-${i}`,'https://i.pinimg.com/564x/4b/70/49/4b70499d19fb8bf4846a9ed924af96cc.jpg');
+			_listOfProduct.unshift(_product);
+		}
+		// _listOfProduct.sort(function(a,b){
+		// 	return a.itsPrice - b.itsPrice;
+		// })
+
+		console.log("before sorting: ");
+		for(let p of _listOfProduct){
+			console.log(p._toString());
+		}
+		_listOfProduct.sort(compare);
+		console.log("after sorting: ");
+		for(let p of _listOfProduct){
+			console.log(p._toString());
+		}
+
+		function compare(a,b) {
+			if (a.itsPrice < b.itsPrice) {
+				return -1 ;
+			}
+			if (a.itsPrice > b.itsPrice) {
+				return 1 ;
+			}
+			return 0;
+		}
+	</script>
+</body>
+</html>

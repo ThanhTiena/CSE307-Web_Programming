@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="problem5.css">
+	<title>problem 5</title>
+</head>
+<body>
+	<main>
+		<div class="category">
+			<h3 class="heading-title">TỔNG ĐÀI IP</h3>
+			<button type="button" id="change">Change</button>
+			<button type="button" id="sortingName">Sort</button>
+			<div class="searchName">
+				<input type="text" name="search" id="search" placeholder="name-searching">
+				<button type="submit" id="search-button">Send</button>
+			</div>
+			<div class="removeID">
+				<input type="text" name="remove" id="remove" placeholder="ID-remove">
+				<button type="submit" id="remove-button">Send</button>
+			</div>
+			<hr>
+		</div>
+		<div class="container-fluid">
+			<div class="row" id="product_container">
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript">
+		let checkCurrent;
+		function creatObject(name, image){
+			var calID = Math.floor(Math.random() * 101);
+			var calPrice = Math.floor(Math.random() * 101);
+			var calQuantity = Math.floor(Math.random() * 100001);
+			return{
+				itsID: `${calID}`,
+				itsName: name,
+				itsQuantity: `${calQuantity}`,
+				itsPrice: `${calPrice}`,
+				itsImage: image,
+				_toString:function(){
+					return `${this.itsID} ${this.itsName} ${this.itsQuantity} ${this.itsPrice} ${this.itsImage}`;
+				}
+			}
+		}
+		var _listOfProduct_Head = new Array();
+		var _listOfProduct_Tail = new Array();
+		for( var i = 0 ; i < 6; i++){
+			let _product = creatObject(`Switch-${i}`,'https://i.pinimg.com/564x/32/ec/82/32ec82f4aae9eeb3d4595a42508c7d07.jpg');
+			_listOfProduct_Head.unshift(_product);
+			_listOfProduct_Tail.push(_product);
+		}
+		function print(arr){
+			let _s = "";
+			for(let p of arr){
+				_s+=`
+					<div class="list_product col-md-2">
+						<div class="wraper">
+							<a href="###"><img src="${p.itsImage}" alt="product" loading="lazy"></a>
+							<div class="booking-button">
+								<a href="###">ĐẶT HÀNG</a>
+								<a href="###">CHI TIẾT</a>
+							</div>
+						</div>
+						<p class="infor-sale">${p.itsName}<span> id-${p.itsID}</span></p>
+						<p class="infor-sale phone">$${p.itsPrice}</p>
+					</div>
+				`;
+			}
+			let productNode =document.getElementById('product_container');
+			productNode.innerHTML=_s;
+		}
+		// for(var i = 0; i < 6; i++){
+		// 	console.log(_listOfProduct_Head[i]._toString());
+		// 	console.log(_listOfProduct_Tail[i]._toString());
+		// }
+		/--------change button-----/ 
+		var count = 1;
+		$('#change').on('click',function(){
+			if (count % 2){
+				print(_listOfProduct_Head);
+			}else{
+				print(_listOfProduct_Tail);
+			}
+			count++;
+		});
+		/-search-----------------/
+		$('#search-button').click(function(event) {
+			var _nameSearch = $('#search').val();
+			var searchArr = new Array();
+			for (let p of _listOfProduct_Head){
+				if(_nameSearch == p.itsName){
+					searchArr.push(p);
+				}
+			}
+			print(searchArr);
+			for(var i of searchArr){
+				console.log(i._toString());
+			}
+		});
+		/-remove-----------------/
+		$('#remove-button').click(function(event) {
+			var _idRemove = $('#remove').val();
+			for (var i = 0; i < _listOfProduct_Head.length ; i++) {
+				if(_listOfProduct_Head[i].itsID == _idRemove){
+					_listOfProduct_Head.splice(i, 1);
+				}
+			}
+			print(_listOfProduct_Head);
+			for(var i of _listOfProduct_Head){
+				console.log(i._toString());
+			}
+		});
+		/-sorting name-----------------/
+		$('#sortingName').click(function(event) {
+			_listOfProduct_Head.sort((a,b) => a.itsName.localeCompare(b.itsName));
+			print(_listOfProduct_Head);
+		});
+	</script>
+</body>
+</html>

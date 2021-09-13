@@ -1,0 +1,78 @@
+.shop-service .container{
+	border-top: 5px solid #672D91;
+	border-bottom: 5px solid #672D91;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.shop-service .service{
+	padding: 30px 20px 30px 20px;
+}
+.shop-service .title-service{
+	text-transform: uppercase;
+	color:#672D91;
+	font-weight: bold;
+}
+.shop-service .icon-service{
+	background-color:#672D91;
+	color: white;
+	font-size: 54px;
+	margin: 0;
+}
+.fa-truck:before, .fa-comments:before{
+	padding: 15px;
+}
+.fa-usd:before{
+	padding: 27px;
+}
+#detail{
+	margin: 0;
+}
+/*foooter============================*/
+footer{
+	background-color: #F8F8F8;
+}
+.bar{
+	border-bottom: 5px solid #672D91;
+	width: 50px;
+	height: 10px;
+}
+.infor-contract .container{
+	padding-top: 60px;
+}
+.infor-contract .container .row ul, .infor-address-contract{
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.infor-contract .container .row h3{
+	text-transform: uppercase;
+	color:#2C3E50;
+	font-size: 18px;
+	font-weight: bold;
+}
+.infor-contract .container .row ul li a{
+	color:#2C3E50;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: 30px;
+}
+.infor-address-contract #detail-contract, .infor-address-contract p b{
+	color: #2C3E50;
+	font-weight: bold;
+}
+.infor-address-contract .col-sm-4{
+	padding-right: 0;
+}
+.address-socile-media a{
+	color: black;
+}
+.rights{
+	width: 100%;
+	background-color: #2C3E50;
+	padding: 10px;
+}
+.rights p {
+	margin: 0;
+	text-align: center;
+	color: #ffffff;
+}

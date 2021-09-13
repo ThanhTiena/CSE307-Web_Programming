@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="problem5.css">
+	<title>problem 5</title>
+</head>
+<body>
+	<main>
+		<div class="category">
+			<h3 class="heading-title">TỔNG ĐÀI IP</h3>
+			<hr>
+		</div>
+		<div class="container-fluid">
+			<div class="row" id="product_container">
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript">
+		var listProduct = [
+				{id:'1',name:'Switch - 1',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"},
+				{id:'2',name:'Switch - 2',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"}
+		];
+		listProduct.unshift(
+				{id:'3',name:'Switch - 3',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"}
+			);
+		listProduct.unshift(
+				{id:'4',name:'Switch - 4',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"}
+			);
+		listProduct.unshift(
+				{id:'5',name:'Switch - 5',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"}
+			);
+		listProduct.unshift(
+				{id:'6',name:'Switch - 6',phone:'7302 8080',image:"https://www.totolink.vn/public/uploads/img_article/switch-poe-la-gi-tai-sao-phai-su-dung-switch-poe-switch-poe-la-gi.png"}
+			);
+
+		function print(arr){
+			let _s = "";
+			for(let p of arr){
+				_s+=`
+					<div class="list_product col-md-2">
+						<div class="wraper">
+							<a href="###"><img src="${p.image}" alt="product" loading="lazy"></a>
+							<div class="booking-button">
+								<a href="###">ĐẶT HÀNG</a>
+								<a href="###">CHI TIẾT</a>
+							</div>
+						</div>
+						<p class="infor-sale">Tổng đài IP Xorcom Spark - CXS1000/NU - ${p.name}</p>
+						<p class="infor-sale phone">Vui lòng gọi (028) 7302 8080</p>
+					</div>
+				`;
+			}
+			let productNode = document.getElementById('product_container');
+			productNode.innerHTML=_s;
+		}
+		print(listProduct);
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset = "utf-8">
+   <title>Problem 3</title>
+   <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+   <style>
+      #accordion-1{
+         font-size: 14px;
+      }
+   </style>
+</head>
+<body>
+   <div id = "accordion-1">
+      <h3>Tab 1</h3>
+      <div>
+         <p>some thing 1</p>
+      </div>
+      <h3>Tab 2</h3>
+      <div>
+         <p>some thing 2</p>
+      </div>
+      <h3>Tab 3</h3>
+      <div>
+         <p>some thing 3</p>
+      </div>
+   </div>
+
+   <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script>
+      $(function() {
+         $( "#accordion-1" ).accordion();
+      });
+   </script>
+</body>
+</html>

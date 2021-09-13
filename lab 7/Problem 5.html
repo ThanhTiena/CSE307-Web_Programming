@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 5</title>
+	<style type="text/css">
+		.container .col img{
+			max-width: 300px;
+			max-height: 100px;
+			cursor: pointer;
+		}
+		.container .col{
+			margin-right: 30px;
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+		}
+		.present{
+			display: flex;
+			justify-content: center;
+		}
+		.present img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<img src="images/pic1.jpg" alt="flower" onclick="doFunction(this);">
+		</div>
+		<div class="col">
+			<img src="images/pic2.jpg" alt="flower" onclick="doFunction(this);">
+		</div>
+		<div class="col">
+			<img src="images/pic3.jpg" alt="flower" onclick="doFunction(this);">
+		</div>
+		<div class="col">
+			<img src="images/pic4.jpg" alt="flower" onclick="doFunction(this);">
+		</div>
+	</div>
+	<div class="displayPicture">
+		<div class="present">
+			<img id="presentPicture">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function doFunction(temp){
+			var present = document.querySelector('#presentPicture');
+			present.src = temp.src;
+			present.parentElement.style.display = "block";
+		}
+	</script>
+</body>
+</html>

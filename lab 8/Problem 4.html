@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset = "utf-8">
+   <title>Problem 4</title>
+   <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+   <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <style>
+      .ui-widget-header,.ui-state-default, ui-button {
+         background: lightcyan;
+         color: orange;
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <div id = "dialog"
+      title = "Message">There are something
+   </div>
+   <button id = "open">Click here</button>
+
+   <script>
+      $(function() {
+         $( "#dialog" ).dialog({
+            autoOpen: false,
+         });
+         $( "#open" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+         });
+      });
+   </script>
+</body>
+</html>
